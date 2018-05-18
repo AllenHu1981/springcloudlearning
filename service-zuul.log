@@ -1,0 +1,172 @@
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67e18f45
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcHandlerMappingIntrospector'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'mvcHandlerMappingIntrospector'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'mvcHandlerMappingIntrospector' to allow for resolving potential circular references
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'mvcHandlerMappingIntrospector'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'faviconHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'resourceHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'welcomePageHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'zuulHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'webEndpointServletHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'controllerEndpointHandlerMapping'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'mvcHandlerMappingIntrospector'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - route matched=ZuulRoute{id='api-a', path='/api-a/**', serviceId='service-ribbon', url='null', stripPrefix=true, retryable=null, sensitiveHeaders=[], customSensitiveHeaders=false, }
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - route matched=ZuulRoute{id='api-b', path='/api-b/**', serviceId='service-feign', url='null', stripPrefix=true, retryable=null, sensitiveHeaders=[], customSensitiveHeaders=false, }
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - route matched=ZuulRoute{id='service-feign', path='/service-feign/**', serviceId='service-feign', url='null', stripPrefix=true, retryable=null, sensitiveHeaders=[], customSensitiveHeaders=false, }
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - route matched=ZuulRoute{id='service-ribbon', path='/service-ribbon/**', serviceId='service-ribbon', url='null', stripPrefix=true, retryable=null, sensitiveHeaders=[], customSensitiveHeaders=false, }
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - route matched=ZuulRoute{id='service-client', path='/service-client/**', serviceId='service-client', url='null', stripPrefix=true, retryable=null, sensitiveHeaders=[], customSensitiveHeaders=false, }
+08:21:00 [http-nio-8772-exec-1] INFO  o.s.c.n.z.web.ZuulHandlerMapping - Mapped URL path [/api-a/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+08:21:00 [http-nio-8772-exec-1] INFO  o.s.c.n.z.web.ZuulHandlerMapping - Mapped URL path [/api-b/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+08:21:00 [http-nio-8772-exec-1] INFO  o.s.c.n.z.web.ZuulHandlerMapping - Mapped URL path [/service-feign/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+08:21:00 [http-nio-8772-exec-1] INFO  o.s.c.n.z.web.ZuulHandlerMapping - Mapped URL path [/service-ribbon/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+08:21:00 [http-nio-8772-exec-1] INFO  o.s.c.n.z.web.ZuulHandlerMapping - Mapped URL path [/service-client/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.web.ZuulHandlerMapping - Matching patterns for request [/api-a/hi] are [/api-a/**]
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.web.ZuulHandlerMapping - URI Template variables for request [/api-a/hi] are {}
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.web.ZuulHandlerMapping - Mapping [/api-a/hi] to HandlerExecutionChain with handler [org.springframework.cloud.netflix.zuul.web.ZuulController@7776884f] and 1 interceptor
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.w.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/api-a/hi]
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.web.ZuulHandlerMapping - Matching patterns for request [/api-a/hi] are [/api-a/**]
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.web.ZuulHandlerMapping - URI Template variables for request [/api-a/hi] are {}
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.web.ZuulHandlerMapping - Mapping [/api-a/hi] to HandlerExecutionChain with handler [org.springframework.cloud.netflix.zuul.web.ZuulController@7776884f] and 1 interceptor
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.w.servlet.DispatcherServlet - Last-Modified value for [/api-a/hi] is: -1
+08:21:00 [http-nio-8772-exec-1] INFO  c.h.d.s.service.filter.MyFilter - GET>>>/api-a/hi
+08:21:00 [http-nio-8772-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Path = null
+08:21:00 [http-nio-8772-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Transfer-Encoding = null
+08:21:00 [http-nio-8772-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Content-Encoding = null
+08:21:00 [http-nio-8772-exec-1] DEBUG c.n.z.h.HttpServletRequestWrapper - Content-Length header = -1
+08:21:00 [http-nio-8772-exec-1] WARN  c.h.d.s.service.filter.MyFilter - token is empty
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - Finding route for path: /api-a/hi
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - servletPath=/
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - zuulServletPath=/zuul
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - RequestUtils.isDispatcherServletRequest()=true
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - RequestUtils.isZuulServletRequest()=false
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - adjustedPath=/api-a/hi
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - Matching pattern:/api-a/**
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.c.n.z.f.SimpleRouteLocator - route matched=ZuulRoute{id='api-a', path='/api-a/**', serviceId='service-ribbon', url='null', stripPrefix=true, retryable=null, sensitiveHeaders=[], customSensitiveHeaders=false, }
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.w.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.w.servlet.DispatcherServlet - Successfully completed request
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'zuulRefreshRoutesListener'
+08:21:00 [http-nio-8772-exec-1] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67e18f45
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@67e18f45
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - URI Template variables for request [/favicon.ico] are {}
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@28768e25]]] and 1 interceptor
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - URI Template variables for request [/favicon.ico] are {}
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@28768e25]]] and 1 interceptor
+08:21:00 [http-nio-8772-exec-2] DEBUG o.s.w.servlet.DispatcherServlet - Last-Modified value for [/favicon.ico] is: -1
+08:21:01 [http-nio-8772-exec-2] DEBUG o.s.w.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+08:21:01 [http-nio-8772-exec-2] DEBUG o.s.w.servlet.DispatcherServlet - Successfully completed request
+08:21:01 [http-nio-8772-exec-2] DEBUG o.s.b.w.s.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@67e18f45
+08:21:03 [SimpleHostRoutingFilter.connectionManagerTimer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Closing expired connections
+08:21:08 [SimpleHostRoutingFilter.connectionManagerTimer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Closing expired connections
+08:21:13 [SimpleHostRoutingFilter.connectionManagerTimer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Closing expired connections
+08:21:18 [SimpleHostRoutingFilter.connectionManagerTimer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Closing expired connections
+08:21:19 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.s.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+08:21:19 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.d.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.i.client.DefaultHttpClient - Stale connection check
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.i.client.DefaultHttpClient - Attempt 1 to execute request
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: GET /eureka/apps/delta HTTP/1.1
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "GET /eureka/apps/delta HTTP/1.1[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Accept: application/json[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Id: 10.60.102.202[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Host: localhost:8761[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "User-Agent: Java-EurekaClient/v1.9.0[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> GET /eureka/apps/delta HTTP/1.1
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Accept: application/json
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Name: DefaultClient
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Version: 1.4
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Id: 10.60.102.202
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Host: localhost:8761
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> User-Agent: Java-EurekaClient/v1.9.0
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Length: 86[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Date: Thu, 17 May 2018 08:21:20 GMT[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[\r][\n]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Type: application/json
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Length: 86
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Date: Thu, 17 May 2018 08:21:20 GMT
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.i.client.DefaultHttpClient - Connection can be kept alive indefinitely
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x0][0xab]VJ,([0xc8][0xc9]LN,[0xc9][0xcc][0xcf]+V[0xb2][0xaa]V*K-*[0x6][0xb1][0xe3][0xe3]SRsJ[0x12][0x95][0xac][0x94][0xc][0xcd][0x95]t@[0xca][0x80]B[0x19][0x89][0xc5][0x19][0xc9][0xf9])[0xa9]@[0xd1][0xd0][0x80]x[0xd3]x[0x88][0x4]L[0xbf][0x92]Utlm-[0x0][0x12][0x1]a[0xfd]S[0x0][0x0][0x0]"
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.u.DeserializerStringCache - clearing global-level cache with size 0
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.u.DeserializerStringCache - clearing app-level serialization cache with size 0
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://localhost:8761/eureka//apps/delta?; statusCode=200
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.DiscoveryClient - Got delta update with apps hashcode UP_5_
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 0
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.DiscoveryClient - The total number of all instances in the client now is 5
+08:21:20 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_5_, is fetching remote regions? false 
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Get connection: {}->http://localhost:8761, timeout = 5000
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - [{}->http://localhost:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Getting free connection [{}->http://localhost:8761][null]
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.i.client.DefaultHttpClient - Stale connection check
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.i.client.DefaultHttpClient - Attempt 1 to execute request
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: PUT /eureka/apps/SERVICE-ZUUL/htf-huzongquan1-nb.htffundoffice.com:service-zuul:8772?status=UP&lastDirtyTimestamp=1526544740281 HTTP/1.1
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "PUT /eureka/apps/SERVICE-ZUUL/htf-huzongquan1-nb.htffundoffice.com:service-zuul:8772?status=UP&lastDirtyTimestamp=1526544740281 HTTP/1.1[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Id: 10.60.102.202[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Host: localhost:8761[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "User-Agent: Java-EurekaClient/v1.9.0[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> PUT /eureka/apps/SERVICE-ZUUL/htf-huzongquan1-nb.htffundoffice.com:service-zuul:8772?status=UP&lastDirtyTimestamp=1526544740281 HTTP/1.1
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Name: DefaultClient
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Version: 1.4
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Id: 10.60.102.202
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Content-Length: 0
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Host: localhost:8761
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> User-Agent: Java-EurekaClient/v1.9.0
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Content-Type: application/xml[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Content-Length: 0[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Date: Thu, 17 May 2018 08:21:20 GMT[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "[\r][\n]"
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Content-Type: application/xml
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Content-Length: 0
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Date: Thu, 17 May 2018 08:21:20 GMT
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.i.client.DefaultHttpClient - Connection can be kept alive indefinitely
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.MonitoredConnectionManager - Released connection is reusable.
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Releasing connection [{}->http://localhost:8761][null]
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Pooling connection [{}->http://localhost:8761][null]; keep alive indefinitely
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.j.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://localhost:8761/eureka//apps/SERVICE-ZUUL/htf-huzongquan1-nb.htffundoffice.com:service-zuul:8772; statusCode=200
+08:21:20 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.discovery.DiscoveryClient - DiscoveryClient_SERVICE-ZUUL/htf-huzongquan1-nb.htffundoffice.com:service-zuul:8772 - Heartbeat status: 200
+08:21:23 [SimpleHostRoutingFilter.connectionManagerTimer] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Closing expired connections
