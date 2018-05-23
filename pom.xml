@@ -57,5 +57,6 @@
         <module>springcloud-serviceribbon</module>
         <module>springcloud-servicefeign</module>
         <module>springcloud-service-zuul</module>
+        <module>springcloud-config-server</module>
     </modules>
     </project>
