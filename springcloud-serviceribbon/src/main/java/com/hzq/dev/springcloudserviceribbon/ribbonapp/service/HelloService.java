@@ -12,7 +12,7 @@ public class HelloService {
     @Autowired
     RestTemplate restTemplate;
 
-    @Value("${project.eurekaclient,name}")
+    @Value("${project.eurekaclient.name}")
     String eurekaclient;
 
     @HystrixCommand(fallbackMethod = "errorHi")
