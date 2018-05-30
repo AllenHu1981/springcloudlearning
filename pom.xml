@@ -77,6 +77,6 @@
         <module>springcloud-config-eurekaserver</module>
         <module>springcloud-sleuth-serverzipkin</module>
         <module>springcloud-sleuth-hiservice</module>
-        <module>springcloud-s</module>
+        <module>springcloud-sleuth-miyaservice</module>
     </modules>
     </project>
