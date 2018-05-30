@@ -3,7 +3,6 @@ package com.hzq.dev.springcloudservicezuul.service.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.exception.ZuulException;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
@@ -48,10 +47,9 @@ public class MyFilter extends ZuulFilter {
     /**
      * * run：过滤器的具体逻辑。可用很复杂，包括查sql，nosql去判断该请求到底有没有权限访问。
      * @return
-     * @throws ZuulException
      */
     @Override
-    public Object run() throws ZuulException {
+    public Object run()  {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         log.info(String.format("%s>>>%s", request.getMethod(), request.getRequestURI().toString()));
