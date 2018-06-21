@@ -24,6 +24,9 @@
         <option value="$PROJECT_DIR$/springcloud-service-feign/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-servicefeign/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-service-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-sleuth-serverzipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-sleuth-hiservice/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-sleuth-miyaservice/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
