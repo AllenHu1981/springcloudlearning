@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-config-client" />
+        <module name="springcloud-config-eurekaserver" />
+        <module name="springcloud-config-server" />
         <module name="springcloud-eurekaclient" />
         <module name="springcloud-eurekaserver" />
         <module name="springcloud-service-zuul" />
         <module name="springcloud-servicefeign" />
         <module name="springcloud-serviceribbon" />
+        <module name="springcloud-sleuth-hiservice" />
+        <module name="springcloud-sleuth-miyaservice" />
+        <module name="springcloud-sleuth-serverzipkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
